@@ -22,15 +22,16 @@ async def on_message(message):
 
         await message.channel.send("Salve Carai!")
 
-    if message.content.startswith("-ping"):
+    elif message.content.startswith("-ping"):
 
         await message.channel.send("pong")
 
-    if message.content.startswith("-dolar help"):
+    elif message.content.startswith("-dolar help"):
 
         await message.channel.send('Digite: "-cotacao" ou "-cotação" ou "-c" para saber a cotação atual do Dólar \nDigite: "-ping" para testar o bot (recebendo um "pong" em resposta)\n\nCriado por @MarlonHenq  https://github.com/MarlonHenq')
 
-    if message.content.startswith("-dolar"):
+    elif message.content.startswith("-dolar"):
         await message.channel.send(printDolar())
+
 
 client.run('BOT_CLIENT_ID')
