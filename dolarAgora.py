@@ -20,7 +20,7 @@ async def on_message(message):
 
     if message.content.startswith("salve"):
 
-        await message.channel.send("Salve Carai!")
+        await message.channel.send("!Salve Carai!")
 
     elif message.content.startswith("-ping"):
 
