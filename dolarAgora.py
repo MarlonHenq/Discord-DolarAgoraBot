@@ -22,7 +22,7 @@ async def on_message(message):
 
         await message.channel.send("!Salve Carai!")
 
-    elif message.content.startswith("-ping"):
+    elif message.content.startswith("-dolar ping"):
 
         await message.channel.send("pong")
 
